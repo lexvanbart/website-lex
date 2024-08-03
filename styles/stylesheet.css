@@ -19,9 +19,11 @@
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
 :root {
-    --primary: #A8F4DA;
+    --primary: hsl(159, 78%, 81%);
     --secondary: #EFFFFA;
     --header-text: #D0FFEF;
+    --section-text: #67d1a8;
+    --body-text: #707C7E;
 
 }
 
@@ -30,22 +32,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* ------------------------------- 2. Typography ----------------------------------- */
 
-h1,
-h2 {
-    font-family: "Lobster", sans-serif;
-    font-size: 62px;
-    font-weight: 500;
-    color: var(--header-text);
+a:link, a:visited {
+    color: var(--header-primary);
+    text-align: center;
+    text-decoration: none;
 }
 
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--body-text);
+}
+
+h1,
+h2,
 h3,
-h4,
-p,
-li {
-    font-family: "Roboto", sans-serif;
-    color: var(--secondary);
+h4 {
+    font-family: "Lobster", sans-serif;
+    color: var(--header-text);
+    text-align: center;
+}
+
+::placeholder {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ------------------------------- 3. Layout --------------------------------------- */
@@ -65,87 +76,125 @@ li {
     align-items: center;
     margin: 0 20px;
     padding: 20px;
-   /* border: 1px dashed orange; */
+    border: 1px dashed orange;
 }
 
 /* --------------- 3.2 Other --------------------------- */
 
-.button-container {
-    display: inline-block;
-    cursor: pointer;
-    justify-content: center;
-    border-radius: 25%;
-    width: 40px;
-    height: 40px;
-    padding: 0 2px;
-}
-
-.active,
-.collapsible:hover {
-    background-color: var(--header-text)
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: var(--secondary);
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change
-.bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change
-.bar2 {
-    opacity: 0;
-}
-
-.change
-.bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-}
-
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: var(--header-text);
-    transition: max-height, ease-out 0.2s;
-}
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
 
 .header-section {
-    background-color: var(--primary);
+    background: rgb(34, 205, 139);
+    background: linear-gradient(294deg, rgb(103, 209, 168) 35%, rgb(135, 233, 208) 100%);
+    color: var(--text-light);
 }
 
+
+.header-navigation {
+    width: 100%;
+}
+
+.header-navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.header-navigation a:link,
+.header-navigation a:visited {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: var(--header-text);
+    padding: 0 16px;
+}
+
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+
+}
 
 /* --------------- 4.2 Introduction ------------------- */
 
 
 
-/* --------------- 4.3 Case Studies ------------------- */
+/* --------------- 4.3 About Me ------------------- */
 
+.aboutme-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* --------------- 4.4 Gallery ----------------------- */
 
-/* --------------- 4.4 Services ----------------------- */
+.gallery-section {
+    background-color: var(--secondary);
+    color: var(--section-text);
+}
 
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
+.image-wrapper {
+    border: 1px solid var(--body-text);
+    background-color: white;
+    box-shadow:  2px 2px 15px var(--body-text);
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    margin: 16px;
+}
+
+.image-wrapper p {
+    color: var(--body-text);
+    font-weight: 400;
+}
+
+.image-wrapper h3 {
+    color: var(--header-text);
+    font-weight: 700;
+    font-size: 25px;
+    padding:  10px 0px;
+}
 
 /* --------------- 4.5 Contact Form ------------------- */
 
+.form-section {
+    background: rgb(34, 205, 139);
+    background: linear-gradient(294deg, rgb(103, 209, 168) 35%, rgb(135, 233, 208) 100%);
+    color: var(--header-text);
+}
 
+input,
+textarea {
+    background-color: var(--secondary);
+    width: 100%;
+    border-style: none;
+    border-radius: 4px;
+    padding: 12px;
+    resize: none;
+}
 
 /* --------------- 4.6 Footer ------------------------- */
 
+.footer-section {
+    background-color: var(--body-text);
+    color: var(--secondary);
+}
 
+.footer-wrapper {
+    padding: 32px;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 

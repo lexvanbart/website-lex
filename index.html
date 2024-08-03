@@ -4,30 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/stylesheet.css">
-    <script src="js/script.js"></script>
+    <!--<script src="js/script.js"></script>-->
     <title>personal website</title>
 </head>
 <body>
     <header class="outer-container header-section">
         <div class="inner-container header-container">
-            <h1>Test text for website header</h1>
-            <div class="header-navigation">
-                <div type="button" class="button-container collapsible" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </div>
-            <nav class="content">
+            <nav class="header-navigation">
                 <ul>
-                    <li>About me</li>
-                    <li>Gallery</li>
-                    <li>Contact details</li>
+                    <li><a href="#aboutme">About me</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact me</a></li>
                 </ul>
             </nav>
         </div>
-    <section></section>
-    <section></section>
-    <section></section>
+    </header>    
+    <section class="outer-container aboutme-section" id="aboutme">
+        <article class="inner-container aboutme-article">
+            <img src="" alt="picture of me">
+            <h2>Welcome! I am a passionate graphic designer with experience in various design fields. My work includes branding, illustration, and digital design.</h2>
+            <article class="aboutme-wrapper">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, quasi nemo odit non perspiciatis accusamus recusandae labore explicabo hic deserunt modi sed facilis reiciendis qui error ad velit consectetur quae fugit! Ullam quod tempore in, explicabo eveniet vero quos. Eaque ea odio dolorem minima necessitatibus fugiat rerum iusto ducimus vel.
+                <ul class="skills">
+                    <li>Affinity Photo, similar to Adobe Photoshop.</li>
+                    <li>Affinity Designer, similar to Adobe Illustrator.</li>
+                    <li>skill</li>
+                    <li>skill</li>
+                    <li>skill</li>
+                </ul>
+            </article>
+        </article>
+    </section>
+    <section class="outer-container gallery-section" id="gallery">
+        <article class="inner-container gallery-article">
+            <h2>Gallery</h2>
+            <article class="image-container"> <img class="image-wrapper" alt="test"></article>
+            <article class="image-container"> <img class="image-wrapper" alt="test"></article>
+            <article class="image-container"> <img class="image-wrapper" alt="test"></article>
+            <article class="image-container"> <img class="image-wrapper" alt="test"></article>
+            <article class="gallery-wrapper">
+                <h3>external links</h3>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </article>
+        </article>
+    </section>
+    <section class="outer-container form-section" id="contact">
+        <article class="inner-container form-wrapper">
+            <h2>Get a quote or ask a question here:</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </article>
+    </section>
+    <footer class="outer-container footer-section">
+        <section class="inner-container footer-wrapper">
+            <p>2024</p>
+        </section>
+    </footer>
 </body>
 </html>
