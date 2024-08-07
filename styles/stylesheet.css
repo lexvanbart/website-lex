@@ -167,6 +167,11 @@ h4 {
     padding:  10px 0px;
 }
 
+.image-wrapper img {
+    width: 100%;
+    justify-content: center;
+}
+
 /* --------------- 4.5 Contact Form ------------------- */
 
 .form-section {
