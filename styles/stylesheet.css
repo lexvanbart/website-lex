@@ -19,11 +19,11 @@
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
 :root {
-    --primary: hsl(159, 78%, 81%);
-    --secondary: #EFFFFA;
-    --header-text: #D0FFEF;
-    --section-text: #67d1a8;
-    --body-text: #707C7E;
+    --primary: hsl(277, 6%, 75%);
+    --secondary: hsl(277, 100%, 97%);
+    --header-text: hsl(277, 18%, 85%);
+    --section-text: hsl(277, 12%, 44%);
+    --body-text: hsl(277, 7%, 29%);
 
 }
 
@@ -87,8 +87,8 @@ h4 {
 /* --------------- 4.1 Header ------------------------- */
 
 .header-section {
-    background: rgb(34, 205, 139);
-    background: linear-gradient(294deg, rgb(103, 209, 168) 35%, rgb(135, 233, 208) 100%);
+    background: rgb(41,41,41);
+    background: linear-gradient(111deg, rgba(41,41,41,1) 0%, rgba(82,77,82,1) 61%, rgba(125,114,125,1) 100%);
     color: var(--text-light);
 }
 
@@ -135,7 +135,7 @@ h4 {
 /* --------------- 4.4 Gallery ----------------------- */
 
 .gallery-section {
-    background-color: var(--secondary);
+
     color: var(--section-text);
 }
 
@@ -175,8 +175,8 @@ h4 {
 /* --------------- 4.5 Contact Form ------------------- */
 
 .form-section {
-    background: rgb(34, 205, 139);
-    background: linear-gradient(294deg, rgb(103, 209, 168) 35%, rgb(135, 233, 208) 100%);
+    background: rgb(41,41,41);
+    background: linear-gradient(111deg, rgba(41,41,41,1) 0%, rgba(82,77,82,1) 61%, rgba(125,114,125,1) 100%);
     color: var(--header-text);
 }
 
