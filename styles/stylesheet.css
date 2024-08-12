@@ -130,6 +130,14 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2.5em;
+}
+
+.photolexPH {
+    border-radius: 50%;
+    border: 8px;
+    border-color: var(--section-text);
+    box-shadow: 10px, 10px, 10px, 10px;
 }
 
 /* --------------- 4.4 Gallery ----------------------- */
