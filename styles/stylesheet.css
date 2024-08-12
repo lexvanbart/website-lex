@@ -131,13 +131,26 @@ h4 {
     flex-direction: column;
     align-items: center;
     margin: 2.5em;
+    padding: 1em;
 }
 
 .photolex {
+    border-style: solid;
     border-radius: 50%;
-    border: 8px;
+    border-width: 5px;
     border-color: var(--section-text);
-    box-shadow: 10px, 10px, 10px, 10px;
+    box-shadow: 10px, 10px, 10px, 10;
+}
+
+.aboutme-wrapper ul {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--body-text);
+}
+
+.aboutme-wrapper ul li {
+    padding: 5px;
 }
 
 /* --------------- 4.4 Gallery ----------------------- */
@@ -150,7 +163,6 @@ h4 {
 .image-container {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 .image-wrapper {
